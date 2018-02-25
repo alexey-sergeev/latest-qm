@@ -1,0 +1,140 @@
+﻿/*
+Theme Name: Latest Quiz Master
+Template: latest
+
+Description: Дочерняя тема для темы Latest. Специально для Quiz Master
+Author: Alexey N. Sergeev
+Version: 1.0
+*/
+
+@import url("style-latest.css");
+
+/* Свои дополнительные стили */
+
+
+.single-entry-content {
+    padding-right: 0;
+}
+
+.homepage-bar {
+    margin-top: -30px;
+}
+
+.input-group input[type="text"] {
+    height: auto;
+} 
+
+
+.center {
+    text-align: center;
+}
+
+.masonry-entry .entry-content, .non-masonry-entry .entry-content, .single-entry-content {
+   font-family: sans-serif;
+}
+
+
+.button, a.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+    height: auto;
+}
+
+.masonry-entry .entry-content, .non-masonry-entry .entry-content, .single-entry-content {
+    letter-spacing: 0;
+}
+
+.single-entry-content {
+    font-size: 16px;
+}
+
+.single-quiz #primary.full-width .entry-meta.no-sidebar{
+	float: left;
+	width: 15%;
+	text-align: left;
+	padding: 0;
+}
+
+.single-quiz #primary.full-width .single-entry-content{
+	float: left;
+	width: 85%;
+	max-width: 800px;
+	padding-left: 10px;
+	padding-right: 0;
+}
+
+.single-quiz-password-required .latest-entry-icon:after,
+.single-quiz-password-protected .latest-entry-icon:after{
+	content: "\f023";
+	margin-right: 10px;
+}
+
+single-quiz #primary.full-width .entry-meta .byline{
+	margin-bottom: 20px;
+}
+
+.single-quiz #primary.full-width .entry-meta .author img{
+    /* margin: 0; */
+    margin-bottom: 1rem;
+}
+
+.single-quiz #primary.full-width .entry-meta .entry-cat,
+.single-quiz #primary.full-width .entry-meta .posted-on,
+.single-quiz #primary.full-width .entry-meta .comment-count{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.single-quiz #primary.full-width .entry-meta .entry-cat-sep,
+.single-quiz #primary.full-width .entry-meta .entry-meta-sep{
+	display: none;
+}
+
+/* .single-entry-content {
+    padding-right: 0;
+}
+
+.site-content {
+    padding-top: 0;
+}
+
+.container {
+    padding: 0;
+    width: auto;
+} */
+
+@media screen and (max-width: 768px){
+
+	.single-quiz #primary.full-width .entry-meta.no-sidebar{
+		float: none;
+		width: 100%;
+		text-align: center;
+		padding: 0;
+	}
+
+	.single-quiz #primary.full-width .entry-meta .byline{
+		margin-bottom: 0;
+	}
+
+	.single-quiz #primary.full-width .entry-meta .author img{
+		margin: 0 auto;
+	}
+
+	.single-quiz #primary.full-width .entry-meta .entry-cat,
+	.single-quiz #primary.full-width .entry-meta .posted-on,
+	.single-quiz #primary.full-width .entry-meta .comment-count{
+		display: inline-block;
+		margin-bottom: 0;
+	}
+
+	.single-quiz #primary.full-width .entry-meta .entry-cat-sep,
+	.single-quiz #primary.full-width .entry-meta .entry-meta-sep{
+		display: inline-block;
+		margin: 0 4px;
+	}
+
+	.single-quiz #primary.full-width .single-entry-content{
+		float: none;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
