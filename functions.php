@@ -26,6 +26,8 @@ function latest_entry_footer( $exclude_cat_id = false ) {
 			echo '<span class="tags-links">' . $tags_list . '</span>';
 		}
 
+		global $post;
+		if ( $post->post_type != 'quiz')
 		edit_post_link(
 			sprintf(
 				/* translators: %s: Name of current post for screen readers */
