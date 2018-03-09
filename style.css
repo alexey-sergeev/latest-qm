@@ -11,6 +11,9 @@ Version: 1.0
 
 /* Свои дополнительные стили */
 
+.qm-draggable .answer {
+    font-size: 16px;
+}
 
 .single-entry-content {
     padding-right: 0;

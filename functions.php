@@ -68,4 +68,14 @@ function latest_get_the_quiz_category_list($exclude,$separator = false) {
 	return $output;
 }
 
+
+apply_filters( 'get_the_archive_title', $title );
+
+add_filter( 'get_the_archive_title', 'my_archive_title' );
+function my_archive_title($content){
+	$out = "Каталог тестов";
+	return $out;
+}
+
+
 ?>

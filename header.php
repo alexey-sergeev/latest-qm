@@ -76,4 +76,5 @@
 	<div id="content" class="site-content clearfix">
 	                                         
 	<?php latest_header_title(); ?>           
+	<p><br />
 	<!-- <div class="container clearfix"> -->
