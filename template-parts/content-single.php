@@ -21,16 +21,18 @@
 
                     $user_name = get_the_author_meta( 'display_name', $user_id );
                     $user_url = bp_core_get_user_domain( $user_id );
-                    echo '<div class="byline center"><span class="author vcard"><a class="url fn n" href="' . esc_url( $user_url ) . '">' . $user_avatar . esc_html( $user_name ) . '</a></div>';
                     
                 } else {
                     
                     $user_name = get_the_author_meta( 'display_name', $user_id );
-                    $user_url = the_author_link( $user_id );
-                    echo '<div class="byline center"><span class="author vcard">' . $user_avatar . esc_html( $user_name ) . '</div>';
+                    $user_url = get_the_author_link( $user_id );
 
                 }
-                
+
+                echo '<div class="byline center"><span class="author vcard"><a class="url fn n" href="' . esc_url( $user_url ) . '">' . $user_avatar . '</a>';
+                echo __( 'Вы', 'mif-qm' ) . ': ';
+                echo '<span class="author vcard"><a class="url fn n" href="' . esc_url( $user_url ) . '">'. esc_html( $user_name ) . '</a></div>';
+
             }
                 
 

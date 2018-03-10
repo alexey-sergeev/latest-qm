@@ -72,7 +72,7 @@
 			</div>
 
 	</header><!-- #masthead -->
-	                        
+                        
 	<div id="content" class="site-content clearfix">
 	                                         
 	<?php latest_header_title(); ?>           
