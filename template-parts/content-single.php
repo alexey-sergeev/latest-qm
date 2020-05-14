@@ -13,9 +13,19 @@
     //		$user_id = get_post_field( 'post_author', get_the_ID() );
             if ( is_user_logged_in() ) {
                 
-                $user_id = get_current_user_id();
-                // $user_avatar = get_avatar( $user_id, 100);
-                $user_avatar = str_replace ( 'thumb', 'full', get_avatar( $user_id, 120 ) );
+				$user_id = get_current_user_id();
+				
+				if ( function_exists( 'bp_core_fetch_avatar' ) ) {
+
+					$user_avatar = bp_core_fetch_avatar( array( 'item_id' => $user_id, 'type' => 'full' ) );
+
+				} else {
+
+					$user_avatar = get_avatar( $user_id, 100);
+
+				}
+				
+                // $user_avatar = str_replace ( 'thumb', 'full', get_avatar( $user_id, 120 ) );
                 
                 if ( function_exists( 'bp_core_get_user_domain' ) ) {
 
